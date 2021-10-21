@@ -59,30 +59,6 @@ namespace MathGame
             }
             
         }
-        /// <summary>
-        /// get the game mode
-        /// </summary>
-        /// <param name="g">based on the radio button selected</param>
-        /// <returns>return the game mode in a string</returns>
-        public string getGameMode(int g)
-        {
-            
-            switch (g)
-            {
-                case 1:
-                    gameMode = "addition";
-                    break;
-                case 2:
-                    gameMode = "subtraction";
-                    break;
-                case 3:
-                    gameMode = "multiplication";
-                    break;
-                case 4:
-                    gameMode = "division";
-                    break;
-            }
-            return gameMode;
-        }
+ 
     }
 }

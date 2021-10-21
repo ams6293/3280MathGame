@@ -9,3 +9,14 @@ C:\Users\amberspatig\Documents\Workspace\School\3280MathGame\MathGame\MathGame\o
 C:\Users\amberspatig\Documents\Workspace\School\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.csproj.CoreCompileInputs.cache
 C:\Users\amberspatig\Documents\Workspace\School\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.exe
 C:\Users\amberspatig\Documents\Workspace\School\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.pdb
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\bin\Debug\MathGame.exe.config
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\bin\Debug\MathGame.exe
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\bin\Debug\MathGame.pdb
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.csproj.AssemblyReference.cache
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.GameForm.resources
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.mainForm.resources
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.Properties.Resources.resources
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.csproj.GenerateResource.cache
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.csproj.CoreCompileInputs.cache
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.exe
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.pdb

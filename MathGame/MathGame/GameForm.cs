@@ -12,6 +12,7 @@ namespace MathGame
 {
     public partial class GameForm : Form
     {
+        gameLogic game = gameLogic.Instance();
         private int ticks;
         public GameForm()
         {
@@ -34,6 +35,10 @@ namespace MathGame
         /// <param name="e"></param>
         private void startbtn_Click(object sender, EventArgs e)
         {
+            game.setValidProblem();
+            signlbl.Text = game.getSign();
+            numOnelbl.Text = game.getNumber1().ToString();
+            numTwolbl.Text = game.getNumber2().ToString();
             timer.Start();
         }
     }

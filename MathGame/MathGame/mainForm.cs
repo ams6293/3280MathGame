@@ -13,6 +13,7 @@ namespace MathGame
     public partial class mainForm : Form
     {
         UserInfo user = new UserInfo();
+        gameLogic game = gameLogic.Instance();
         string gameMode;
         public mainForm()
         {
@@ -23,26 +24,27 @@ namespace MathGame
             bool isValidRadio = false;
             if(additionRadio.Checked == true)
             {
-                gameMode = user.getGameMode(1);
+                game.setType(1);
                 isValidRadio = true;
             }
             else if(subtractionRadio.Checked == true)
             {
-                gameMode = user.getGameMode(2);
+                game.setType(2);
                 isValidRadio = true;
             }
-            else if (subtractionRadio.Checked == true)
+            else if (multiplicationRadio.Checked == true)
             {
-                gameMode = user.getGameMode(2);
+                game.setType(3);
                 isValidRadio = true;
             }
-            else if (subtractionRadio.Checked == true)
+            else if (divisionRadio.Checked == true)
             {
-                gameMode = user.getGameMode(2);
+                game.setType(4);
                 isValidRadio = true;
             }
             return isValidRadio;
         }
+    
         private void beginGamebtn_Click(object sender, EventArgs e)
         {
            
