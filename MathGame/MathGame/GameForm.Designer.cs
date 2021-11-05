@@ -41,6 +41,8 @@ namespace MathGame
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.timerlbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Correctlbl = new System.Windows.Forms.Label();
+            this.incorrectlbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // numOnelbl
@@ -51,7 +53,6 @@ namespace MathGame
             this.numOnelbl.Name = "numOnelbl";
             this.numOnelbl.Size = new System.Drawing.Size(80, 63);
             this.numOnelbl.TabIndex = 0;
-            this.numOnelbl.Text = "1";
             this.numOnelbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // signlbl
@@ -62,7 +63,6 @@ namespace MathGame
             this.signlbl.Name = "signlbl";
             this.signlbl.Size = new System.Drawing.Size(82, 63);
             this.signlbl.TabIndex = 1;
-            this.signlbl.Text = "+";
             this.signlbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numTwolbl
@@ -73,7 +73,6 @@ namespace MathGame
             this.numTwolbl.Name = "numTwolbl";
             this.numTwolbl.Size = new System.Drawing.Size(72, 63);
             this.numTwolbl.TabIndex = 2;
-            this.numTwolbl.Text = "1";
             this.numTwolbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -89,6 +88,7 @@ namespace MathGame
             // 
             // answertxtbox
             // 
+            this.answertxtbox.Enabled = false;
             this.answertxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answertxtbox.Location = new System.Drawing.Point(450, 205);
             this.answertxtbox.Name = "answertxtbox";
@@ -99,6 +99,7 @@ namespace MathGame
             // submitAnswerbtn
             // 
             this.submitAnswerbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.submitAnswerbtn.Enabled = false;
             this.submitAnswerbtn.Font = new System.Drawing.Font("Ink Free", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitAnswerbtn.Location = new System.Drawing.Point(427, 246);
             this.submitAnswerbtn.Name = "submitAnswerbtn";
@@ -106,6 +107,7 @@ namespace MathGame
             this.submitAnswerbtn.TabIndex = 5;
             this.submitAnswerbtn.Text = "Submit";
             this.submitAnswerbtn.UseVisualStyleBackColor = false;
+            this.submitAnswerbtn.Click += new System.EventHandler(this.submitAnswerbtn_Click);
             // 
             // startbtn
             // 
@@ -147,6 +149,30 @@ namespace MathGame
             this.label1.TabIndex = 8;
             this.label1.Text = "TIMER";
             // 
+            // Correctlbl
+            // 
+            this.Correctlbl.AutoSize = true;
+            this.Correctlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Correctlbl.ForeColor = System.Drawing.Color.Green;
+            this.Correctlbl.Location = new System.Drawing.Point(447, 182);
+            this.Correctlbl.Name = "Correctlbl";
+            this.Correctlbl.Size = new System.Drawing.Size(68, 20);
+            this.Correctlbl.TabIndex = 9;
+            this.Correctlbl.Text = "Correct";
+            this.Correctlbl.Visible = false;
+            // 
+            // incorrectlbl
+            // 
+            this.incorrectlbl.AutoSize = true;
+            this.incorrectlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incorrectlbl.ForeColor = System.Drawing.Color.OrangeRed;
+            this.incorrectlbl.Location = new System.Drawing.Point(446, 182);
+            this.incorrectlbl.Name = "incorrectlbl";
+            this.incorrectlbl.Size = new System.Drawing.Size(81, 20);
+            this.incorrectlbl.TabIndex = 10;
+            this.incorrectlbl.Text = "Incorrect";
+            this.incorrectlbl.Visible = false;
+            // 
             // GameForm
             // 
             this.AcceptButton = this.submitAnswerbtn;
@@ -154,6 +180,8 @@ namespace MathGame
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(562, 450);
+            this.Controls.Add(this.incorrectlbl);
+            this.Controls.Add(this.Correctlbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.timerlbl);
             this.Controls.Add(this.startbtn);
@@ -182,5 +210,7 @@ namespace MathGame
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label timerlbl;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Correctlbl;
+        private System.Windows.Forms.Label incorrectlbl;
     }
 }

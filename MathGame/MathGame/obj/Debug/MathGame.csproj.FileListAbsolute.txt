@@ -20,3 +20,4 @@ C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGam
 C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.csproj.CoreCompileInputs.cache
 C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.exe
 C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.pdb
+C:\Users\Amber\Documents\CS3280\3280MathGame\MathGame\MathGame\obj\Debug\MathGame.ScoreForm.resources

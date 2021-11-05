@@ -12,9 +12,9 @@ namespace MathGame
 {
     public partial class mainForm : Form
     {
-        UserInfo user = new UserInfo();
+        UserInfo user = UserInfo.Instance();
         gameLogic game = gameLogic.Instance();
-        string gameMode;
+        
         public mainForm()
         {
             InitializeComponent();
@@ -54,6 +54,8 @@ namespace MathGame
                 {
                     if(getRadioChecked() == true)
                     {
+                        game.resetQuestionCount();
+                        user.resetAnswers();
                         GameForm gameform = new GameForm();
                         gameform.ShowDialog();
                     }
